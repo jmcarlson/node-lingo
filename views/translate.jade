@@ -1,0 +1,19 @@
+extends layout
+block css
+	link(href='css/translate.css')
+block content
+	h1 Translate Text
+	form
+		input#inputText(name='string' type='text' placeholder='Enter text')
+		//- input#translatedText(name='translated' type='text' placeholder='Translated text')
+		select#sourceLang
+			option(value='eng') English
+			option(value='spa') Spanish
+		select#targetLang
+			option(value='eng') English
+			option(value='spa') Spanish		
+		input#translateButton(name='submit' type='submit' value='Translate')
+	h2 Translated Text
+	#translatedText
+block scripts
+	script(src='/javascript/translate.js')
