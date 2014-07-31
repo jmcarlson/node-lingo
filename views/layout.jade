@@ -4,8 +4,16 @@ html(lang='en')
 		meta(charset="utf-8")
 		title Lingo
 		block css
+		link(rel="stylesheet" href='css/layout.css')
 
 	body
+		nav 
+			h1 Lingo
+			ul
+				li: a(href='/') Home
+				li: a(href='/translate') Translate
+				li: a(href='/quiz') Quiz
+				li: a(href='/progress') Progress
 		block content
 		script(src='//code.jquery.com/jquery-2.1.1.min.js')
 		block scripts
